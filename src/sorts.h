@@ -44,7 +44,9 @@ void selectionSortIntegers(int *array, unsigned int size, int print)
         int minimumIndex = findMinimum(array, i, size); // find the index of the minimum value in the unsorted part of the array
         if (minimumIndex != i) // if the minimum value is not at the current position
         {
-            swap(&array[i], &array[minimumIndex]); // swap the minimum value with the current position
+            int temp = array[i]; // swap the minimum value with the current position
+            array[i] = array[minimumIndex];
+            array[minimumIndex] = temp; 
         }
         if (print) // if print is true, print the array after each iteration
         {
@@ -52,7 +54,6 @@ void selectionSortIntegers(int *array, unsigned int size, int print)
         }
     }
 }
-
 /***  Code for Insertion Sort ***/
 
 // =============== Sort Function ===============
