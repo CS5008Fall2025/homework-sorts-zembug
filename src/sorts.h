@@ -39,6 +39,10 @@ int findMinimum(int *array, int start, int stop)
 // Output: No value is returned, but 'array' should be modified to store a sorted array of numbers.
 void selectionSortIntegers(int *array, unsigned int size, int print)
 {
+    if (array == NULL || size == 0) {
+        return;
+        
+    }
     for (unsigned int i = 0; i < size - 1; i++) // iterate through the array
     {
         int minimumIndex = findMinimum(array, i, size); // finf index of minimum value in unsorted part of array
@@ -69,7 +73,11 @@ void selectionSortIntegers(int *array, unsigned int size, int print)
 // Output: No value is returned, but 'array' should be modified to store a sorted array of numbers.
 void insertionSortIntegers(int *array, unsigned int size, int print)
 {
-   for (unsigned int i = 1; i < size; i++) // iterate through the array starting from the second element
+    if (array == NULL || size == 0) {
+        return;
+    }
+
+    for (unsigned int i = 1; i < size; i++) // iterate through the array starting from the second element
     {
         int key = array[i]; // the current element to be inserted
         int j = i - 1; // the index of the last element in the sorted part of the array
@@ -88,7 +96,6 @@ void insertionSortIntegers(int *array, unsigned int size, int print)
             printIntArray(array, size);
         }
     }
- 
 
 }
 
