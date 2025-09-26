@@ -21,8 +21,7 @@ int findMinimum(int *array, int start, int stop)
             minimumIndex = i; // update min index
         }
     }
-    return minimumIndex;
-    //return 0; // modify to return the index of the min value
+    return minimumIndex; 
 }
 
 
@@ -39,22 +38,21 @@ int findMinimum(int *array, int start, int stop)
 // Output: No value is returned, but 'array' should be modified to store a sorted array of numbers.
 void selectionSortIntegers(int *array, unsigned int size, int print)
 {
-    if (array == NULL || size == 0) {
-        return;
-        
+    if (array == NULL || size == 0) { // if array is null or 0 return
+        return;   
     }
-    for (unsigned int i = 0; i < size - 1; i++) // iterate through the array
+    for (unsigned int i = 0; i < size - 1; i++) // iterate through the array, except last element
     {
-        int minimumIndex = findMinimum(array, i, size); // finf index of minimum value in unsorted part of array
-        if (minimumIndex != i) // if the minimum value is not at the current position
+        int minimumIndex = findMinimum(array, i, size); // find index of smallest element in unsorted part of array
+        if (minimumIndex != i) // if the smallest is not in correct position, swap it
         {
-            int temp = array[i]; // swap the minimum value with the current position
-            array[i] = array[minimumIndex];
+            // swap current element with minimum element found
+            int temp = array[i]; 
+            array[i] = array[minimumIndex]; 
             array[minimumIndex] = temp; 
         }
-        if (print) // if print is true, print the array after each iteration
-        {
-            printIntArray(array, size);
+        if (print) { // if print is true, print the array after each iteration
+            printIntArray(array, size); // print the array
         }
     }
 }
@@ -73,26 +71,22 @@ void selectionSortIntegers(int *array, unsigned int size, int print)
 // Output: No value is returned, but 'array' should be modified to store a sorted array of numbers.
 void insertionSortIntegers(int *array, unsigned int size, int print)
 {
-    if (array == NULL || size == 0) {
+    if (array == NULL || size == 0) { // if array is null or 0 return  
         return;
     }
-
     for (unsigned int i = 1; i < size; i++) // iterate through the array starting from the second element
     {
         int key = array[i]; // the current element to be inserted
         int j = i - 1; // the index of the last element in the sorted part of the array
 
-        // Move elements of array[0..i-1], that are greater than key,
-        // to one position ahead of their current position
-        while (j >= 0 && array[j] > key)
+        while (j >= 0 && array[j] > key) //shift elements > key to the right
         {
-            array[j + 1] = array[j];
-            j--;
+            array[j + 1] = array[j]; // shift element to the right
+            j--; // move to the previous element
         }
         array[j + 1] = key; // insert the key at its correct position
 
-        if (print) // if print is true, print the array after each iteration
-        {
+        if (print) { // if print is true, print the array after each iteration
             printIntArray(array, size);
         }
     }
