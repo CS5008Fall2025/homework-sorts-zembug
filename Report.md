@@ -9,6 +9,7 @@ You are free to write a script to run the program and build your table (then cop
 
 ### Table [^note]
 | N | Bubble | Selection | Insertion | Merge | Quick |
+
 |100|0.000014|0.000007|0.000004|0.000000|0.000004|
 | 500 | :--: | :--: | :--: | :--: | :--: |
 | 750 | :--: | :--: | :--: | :--: | :--: |
