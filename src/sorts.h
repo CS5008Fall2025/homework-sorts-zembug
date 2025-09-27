@@ -77,7 +77,7 @@ void insertionSortIntegers(int *array, unsigned int size, int print)
     for (unsigned int i = 1; i < size; i++) // iterate through the array starting from the second element
     {
         int currentValue = array[i]; // the current element to be inserted
-        int j = i - 1; // the index of the last element in the sorted part of the array
+        int j = (int)i - 1; // the index of the last element in the sorted part of the array
 
         while (j >= 0 && array[j] > currentValue) //shift elements > current value to the right
         {
@@ -109,10 +109,10 @@ void insertionSortIntegers(int *array, unsigned int size, int print)
 void bubbleSortIntegers(int *array, unsigned int size, int print)
 {
     // outer loop
-    for(int i = 0; i < size; i++) { // iterate through the array
+    for(unsigned int i = 0; i < size; i++) { // iterate through the array
         int swapped = 0; // flag to check if any swapping occurred
         // inner loop   
-        for(int j = 0; j < size - i - 1; j++) {
+        for(unsigned int j = 0; j < size - i - 1; j++) {
             if (array[j] > array[j + 1]) {
                 swap(&array[j], &array[j + 1]);
                 swapped = 1; // set flag to true if swapping occurred
@@ -120,6 +120,9 @@ void bubbleSortIntegers(int *array, unsigned int size, int print)
         }
         if(!swapped) {
             break; // if no swapping occurred, the array is sorted
+        }
+        if(print) {
+            printIntArray(array, size); // print the array after each outer loop iteration
         }
     }
 }
