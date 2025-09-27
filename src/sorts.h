@@ -43,8 +43,8 @@ void selectionSortIntegers(int *array, unsigned int size, int print)
     }
     for (unsigned int i = 0; i < size - 1; i++) // iterate through the array, except last element
     {
-        int minimumIndex = findMinimum(array, i, size); // find index of smallest element in unsorted part of array
-        if (minimumIndex != i) // if the smallest is not in correct position, swap it
+        int minimumIndex = findMinimum(array, (int)i, (int)size); // find index of smallest element in unsorted part of array
+        if (minimumIndex != (int)i) // if the smallest is not in correct position, swap it
         {
             // swap current element with minimum element found
             int temp = array[i]; 
@@ -108,8 +108,20 @@ void insertionSortIntegers(int *array, unsigned int size, int print)
 //           be modified to store a sorted array of size.
 void bubbleSortIntegers(int *array, unsigned int size, int print)
 {
-    // code generated from lab
-
+    // outer loop
+    for(int i = 0; i < size; i++) { // iterate through the array
+        int swapped = 0; // flag to check if any swapping occurred
+        // inner loop   
+        for(int j = 0; j < size - i - 1; j++) {
+            if (array[j] > array[j + 1]) {
+                swap(&array[j], &array[j + 1]);
+                swapped = 1; // set flag to true if swapping occurred
+            }
+        }
+        if(!swapped) {
+            break; // if no swapping occurred, the array is sorted
+        }
+    }
 }
 
 // ** You will work on merge sort during the lab on Module 06 ** //
