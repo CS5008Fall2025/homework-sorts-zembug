@@ -8,7 +8,7 @@ You are free to write a script to run the program and build your table (then cop
  
 
 ### Table [^note]
-| N | Bubble | Selection | Insertion | Merge | Quick |
+| N | Bubble | Selection | Insertion | Merge* | Quick |
 | :-- | :--: | :--: | :--: | :--: | :--: |
 | 100     | 0.000014   | 0.000007   | 0.000004   | 0.000000  | 0.000004  |
 | 500     | 0.000288   | 0.000123   | 0.000072   | 0.000000  | 0.000025  |
@@ -24,7 +24,7 @@ You are free to write a script to run the program and build your table (then cop
 | 200000  | 66.904928  | 16.439982  | 11.084632  | 0.000042  | 0.018715  |
 | 300000  | 150.998411 | 36.901891  | 25.160644  | 0.000037  | 0.028576  |
 
-
+*Merge sort not implemented yet
 
 ## BigO Analysis  / Questions
 
