@@ -116,6 +116,10 @@ For both these questions, are you are free to use what you did as the last secti
 
 1. Select one technical interview question (this module or previous) from the [technical interview list](https://github.com/CS5008-khoury/Resources/blob/main/TechInterviewQuestions.md) below and answer it in a few sentences. You can use any resource you like to answer the question.
 
+What is the difference between a compiled and an interpreted language? Which one is better? Give an example of each.
+
+A compiled language, like C, takes your whole program and translates it into machine code before it runs. This makes it fast and efficient because the computer can read it directly. An interpreted language, like Python, doesn’t do that all at once. It reads and runs your code one line at a time, which can be slower but easier to test and change. Compiled languages are great when speed matters, like in games or operating systems. Interpreted languages are better for learning, quick fixes, or small tasks.[1]
+
 2. Select one coding question (this module or previous) from the [coding practice repository](https://github.com/CS5008-khoury/Resources/blob/main/LeetCodePractice.md) and include a c file with that code with your submission. Make sure to add comments on what you learned, and if you compared your solution with others. 
  
 [remove_duplicates.c] (https://github.com/CS5008Fall2025/homework-sorts-zembug/blob/main/remove_duplicates.c)
@@ -135,7 +139,8 @@ Give the worst and best case time-complexity, and examples that would generate t
 ## References
 Add your references here. A good reference includes an inline citation, such as [1] , and then down in your references section, you include the full details of the reference. Use [ACM Reference format].
 
-1. Reference info, date, etc.
+1. IBM Documentation. Compiled versus interpreted languages. (1990, 2010). Retrieved Septemebr 28, 2025 from https://www.ibm.com/docs/en/zos-basic-skills?topic=zos-compiled-versus-interpreted-languages
+
 2. ...
 
 
