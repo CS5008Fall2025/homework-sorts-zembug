@@ -38,7 +38,7 @@ Include the image in your markdown. As a reminder, you save the image in your re
 ### 2. Analysis
 Looking at the graph and the table, what can you say about the various sorts? Which are the fastest? Which are the slowest? Which are the most consistent? Which are the least consistent? Use this space to reflect in your own words your observations.
 
-Quick sort is the fastest overall. it handles the larger amounts of data efficiently, with low times even as the number of items increases. Insertion sort also performs well for smaller data, but slows down as the data grows. Bubble Sort is the slowest. Its time increases dramatically with larger data amounts, making it less practical for big lists. Selection sort is a bit better than bubble sort but still much slower than quick or insertion sort. In terms of consistency, quick sort stays fast with increasing data size, while bubble and selection sorts become much slower and less reliable as the list size increases.
+Quick sort is the fastest overall. it handles the larger amounts of data efficiently, with low times even as the number of items increases. Insertion sort also performs well for smaller data, but slows down as the data grows. Bubble Sort is the slowest. Its time increases dramatically with larger data amounts, making it less practical for big lists. Selection sort is a bit better than bubble sort but still much slower than quick or insertion sort. In terms of consistency, quick sort stays fast with increasing data size, while bubble and selection sorts become much slower and less reliable as the list size increases. [2]
 
 
 ### 3. Big O
@@ -50,12 +50,24 @@ Build another table that presents the best, worst, and average case for Bubble, 
 | Selection Sort | O(n²)     | O(n²)        | O(n²)       |
 | Insertion Sort | O(n)      | O(n²)        | O(n²)       |
 | Merge Sort     | O(n log n)| O(n log n)   | O(n log n)  |
-| Quick Sort     | O(n log n)| O(n log n)   | O(n²)       |
+| Quick Sort     | O(n log n)| O(n log n)   | O(n²)       | 
+
+[2]
 
 
 #### 3.2 Worst Case
 Provide example of arrays that generate _worst_ case for Bubble, Selection, Insertion, Merge Sorts
 
+| Sorts          | Worst-Case Array      |
+|----------------|-----------------------|
+| Bubble Sort    | [7, 6, 5, 4, 3, 2, 1] |
+| Selection Sort | [7, 6, 5, 4, 3, 2, 1] |
+| Insertion Sort | [7, 6, 5, 4, 3, 2, 1] |
+| Merge Sort     | [any array]           |
+
+Worst case for Bubble, Selection, and Insertion are completely reversed arrays.
+
+[2]
 
 #### 3.3 Best Case
 Provide example of arrays that generate _best_ case for Bubble, Selection, Insertion, Merge Sorts 
@@ -151,7 +163,7 @@ Add your references here. A good reference includes an inline citation, such as 
 
 1. IBM Documentation. Compiled versus interpreted languages. (1990, 2010). Retrieved Septemebr 28, 2025 from https://www.ibm.com/docs/en/zos-basic-skills?topic=zos-compiled-versus-interpreted-languages
 
-2. ...
+2. GeeksforGeeks. Sorting Algorithms. (August 24, 2025). Retrieved September 28, 2025 from https://www.geeksforgeeks.org/dsa/sorting-algorithms/
 
 
 
