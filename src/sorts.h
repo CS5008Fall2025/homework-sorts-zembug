@@ -111,10 +111,10 @@ void bubbleSortIntegers(int *array, unsigned int size, int print)
     // outer loop
     for(unsigned int i = 0; i < size; i++) { // iterate through the array
         int swapped = 0; // flag to check if any swapping occurred
-        // inner loop   
-        for(unsigned int j = 0; j < size - i - 1; j++) {
-            if (array[j] > array[j + 1]) {
-                swap(&array[j], &array[j + 1]);
+        // inner loop to perform swaps
+        for(unsigned int j = 0; j < size - i - 1; j++) { 
+            if (array[j] > array[j + 1]) { //compare j and j+1, swap if j is larger
+                swap(&array[j], &array[j + 1]); // swap the elements
                 swapped = 1; // set flag to true if swapping occurred
             }
         }
