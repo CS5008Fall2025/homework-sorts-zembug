@@ -118,7 +118,7 @@ For both these questions, are you are free to use what you did as the last secti
 
 2. Select one coding question (this module or previous) from the [coding practice repository](https://github.com/CS5008-khoury/Resources/blob/main/LeetCodePractice.md) and include a c file with that code with your submission. Make sure to add comments on what you learned, and if you compared your solution with others. 
  
-remove_duplicates.c: (https://github.com/CS5008Fall2025/homework-sorts-zembug/blob/main/remove_duplicates.c)
+[remove_duplicates.c] (https://github.com/CS5008Fall2025/homework-sorts-zembug/blob/main/remove_duplicates.c)
 
 
 ## Deeper Thinking
