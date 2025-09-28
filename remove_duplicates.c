@@ -17,3 +17,9 @@ int removeDuplicates(int* nums, int numsSize) {
 
     return k;
 }
+
+/** 
+* What I learned:
+* How to change the array directly without needing to create a new array
+* How to use 2 pointers. One to iterate through array and the other to track position of unique elements
+*/
