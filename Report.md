@@ -135,9 +135,9 @@ Pair the following terms with the correct function in the table.
 ### 6. Stable vs Unstable
 Look up stability as it refers to sorting. In your own words, describe one sort that is stable and one sort that isn't stable  
 
->Insertion sort is stable because it preserves the relative order of elements that are equal. For example, if two equal numbers appear in the list, the one that comes first will still come before the other after sorting. [3]
+Insertion sort is stable because it preserves the relative order of elements that are equal. For example, if two equal numbers appear in the list, the one that comes first will still come before the other after sorting. [3]
 
->Selection Sort is unstable because elements that are equal might get swapped around during sorting, so their original order could change. [3]
+Selection Sort is unstable because elements that are equal might get swapped around during sorting, so their original order could change. [3]
 
 ### 6.2 When stability is needed?
 Explain in your own words a case in which you will want a stable algorithm over an unstable. Include an example.
