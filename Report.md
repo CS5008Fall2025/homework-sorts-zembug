@@ -92,6 +92,8 @@ Order the various sorts based on which take up the most memory when sorting to t
 
 Most to least: Merge, Bubble, Selection, Insertion
 
+[2]
+
 ### 4. Growth of Functions
 Give the following values, place them correctly into *six* categories. Use the bullets, and feel free to cut and paste the full LatexMath we used to generate them.  
 
