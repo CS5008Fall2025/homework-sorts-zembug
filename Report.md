@@ -83,6 +83,15 @@ Provide example of arrays that generate _best_ case for Bubble, Selection, Inser
 #### 3.4 Memory Considerations
 Order the various sorts based on which take up the most memory when sorting to the least memory. You may have to research this, and include the mathematical notation. 
 
+| Sort    | Memory |
+| :--| :-- |
+| Merge Sort     | O(n)|
+| Bubble Sort    | O(1)|
+| Selection Sort | O(1)|
+| Insertion Sort | O(1)|
+
+Most to least: Merge, Bubble, Selection, Insertion
+
 ### 4. Growth of Functions
 Give the following values, place them correctly into *six* categories. Use the bullets, and feel free to cut and paste the full LatexMath we used to generate them.  
 
