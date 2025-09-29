@@ -144,7 +144,7 @@ Explain in your own words a case in which you will want a stable algorithm over 
 
 When organizing a raid in World of Warcraft, it's important to preserve the original sign-up order of players, as it often reflects their role or priority in the group. Each entry includes a player's name and class. While you may want to sort the list by class to group similar roles together (like healers, tanks, or DPS), you still want to maintain the original order of names within each class to respect the sign-up sequence. This is where a stable sorting algorithm becomes essential as it allows you to sort by class without disrupting the order in which players signed up.
 
-### Original Roster (Sign-Up Order)
+Original Roster (Sign-Up Order):
 
 - Sylvanas – Hunter  
 - Thrall – Shaman  
@@ -157,7 +157,7 @@ When organizing a raid in World of Warcraft, it's important to preserve the orig
 - Grumak – Shaman  
 - Morvash – Death Knight  
 
-### Sorted by Class (Using Stable Sort)
+Sorted by Class (Using Stable Sort):
 
 - Arthas – Death Knight  
 - Morvash – Death Knight  
