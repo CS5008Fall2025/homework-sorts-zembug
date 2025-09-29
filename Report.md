@@ -44,8 +44,8 @@ Quick sort is the fastest overall. it handles the larger amounts of data efficie
 ### 3. Big O
 Build another table that presents the best, worst, and average case for Bubble, Selection, Insertion, Merge, and Quick. You are free to use resources for this, but please reference them if you do. 
 
-| Sorts          | Best Case | Average Case | Worst Case  |
-| :------------- | :-------- | :----------- | :---------- |
+| Sorts  | Best Case | Average Case | Worst Case  |
+| :-- | :-- | :-- | :-- |
 | Bubble Sort    | O(n)      | O(n²)        | O(n²)       |
 | Selection Sort | O(n²)     | O(n²)        | O(n²)       |
 | Insertion Sort | O(n)      | O(n²)        | O(n²)       |
@@ -58,8 +58,8 @@ Build another table that presents the best, worst, and average case for Bubble, 
 #### 3.2 Worst Case
 Provide example of arrays that generate _worst_ case for Bubble, Selection, Insertion, Merge Sorts
 
-| Sorts          | Worst-Case Array      |
-|----------------|-----------------------|
+| Sorts  | Worst-Case Array |
+|:--|:--|
 | Bubble Sort    | [7, 6, 5, 4, 3, 2, 1] |
 | Selection Sort | [7, 6, 5, 4, 3, 2, 1] |
 | Insertion Sort | [7, 6, 5, 4, 3, 2, 1] |
