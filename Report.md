@@ -38,7 +38,7 @@ Include the image in your markdown. As a reminder, you save the image in your re
 ### 2. Analysis
 Looking at the graph and the table, what can you say about the various sorts? Which are the fastest? Which are the slowest? Which are the most consistent? Which are the least consistent? Use this space to reflect in your own words your observations.
 
-Quick sort is the fastest overall. it handles the larger amounts of data efficiently, with low times even as the number of items increases. Insertion sort also performs well for smaller data, but slows down as the data grows. Bubble Sort is the slowest. Its time increases dramatically with larger data amounts, making it less practical for big lists. Selection sort is a bit better than bubble sort but still much slower than quick or insertion sort. In terms of consistency, quick sort stays fast with increasing data size, while bubble and selection sorts become much slower and less reliable as the list size increases. [2]
+    Quick sort is the fastest overall. it handles the larger amounts of data efficiently, with low times even as the number of items increases. Insertion sort also performs well for smaller data, but slows down as the data grows. Bubble Sort is the slowest. Its time increases dramatically with larger data amounts, making it less practical for big lists. Selection sort is a bit better than bubble sort but still much slower than quick or insertion sort. In terms of consistency, quick sort stays fast with increasing data size, while bubble and selection sorts become much slower and less reliable as the list size increases. [2]
 
 
 ### 3. Big O
@@ -64,7 +64,7 @@ Provide example of arrays that generate _worst_ case for Bubble, Selection, Inse
 | Insertion Sort | [7, 6, 5, 4, 3, 2, 1] |
 | Merge Sort     | [any array]           |
 
-Worst case for Bubble, Selection, and Insertion are completely reversed arrays.
+    Worst case for Bubble, Selection, and Insertion are completely reversed arrays.
 
 [2]
 
@@ -90,7 +90,7 @@ Order the various sorts based on which take up the most memory when sorting to t
 | Selection Sort | O(1)|
 | Insertion Sort | O(1)|
 
-Most to least: Merge, Bubble, Selection, Insertion
+    Most to least: Merge, Bubble, Selection, Insertion
 
 [2]
 
@@ -135,40 +135,40 @@ Pair the following terms with the correct function in the table.
 ### 6. Stable vs Unstable
 Look up stability as it refers to sorting. In your own words, describe one sort that is stable and one sort that isn't stable  
 
-Insertion sort is stable because it preserves the relative order of elements that are equal. For example, if two equal numbers appear in the list, the one that comes first will still come before the other after sorting. [3]
+    Insertion sort is stable because it preserves the relative order of elements that are equal. For example, if two equal numbers appear in the list, the one that comes first will still come before the other after sorting. [3]
 
-Selection Sort is unstable because elements that are equal might get swapped around during sorting, so their original order could change. [3]
+    Selection Sort is unstable because elements that are equal might get swapped around during sorting, so their original order could change. [3]
 
 ### 6.2 When stability is needed?
 Explain in your own words a case in which you will want a stable algorithm over an unstable. Include an example.
 
-When organizing a raid in World of Warcraft, it's important to preserve the original sign-up order of players, as it often reflects their role or priority in the group. Each entry includes a player's name and class. While you may want to sort the list by class to group similar roles together (like healers, tanks, or DPS), you still want to maintain the original order of names within each class to respect the sign-up sequence. This is where a stable sorting algorithm becomes essential as it allows you to sort by class without disrupting the order in which players signed up.
+    When organizing a raid in World of Warcraft, it's important to preserve the original sign-up order of players, as it often reflects their role or priority in the group. Each entry includes a player's name and class. While you may want to sort the list by class to group similar roles together (like healers, tanks, or DPS), you still want to maintain the original order of names within each class to respect the sign-up sequence. This is where a stable sorting algorithm becomes essential as it allows you to sort by class without disrupting the order in which players signed up.
 
-Original Roster (Sign-Up Order):
+    Original Roster (Sign-Up Order):
 
-- Sylvanas – Hunter  
-- Thrall – Shaman  
-- Jaina – Mage  
-- Anduin – Priest  
-- Falrien – Hunter  
-- Velen – Priest  
-- Elowen – Mage  
-- Arthas – Death Knight  
-- Grumak – Shaman  
-- Morvash – Death Knight  
+    - Sylvanas – Hunter  
+    - Thrall – Shaman  
+    - Jaina – Mage  
+    - Anduin – Priest  
+    - Falrien – Hunter  
+    - Velen – Priest  
+    - Elowen – Mage  
+    - Arthas – Death Knight  
+    - Grumak – Shaman  
+    - Morvash – Death Knight  
 
-Sorted by Class (Using Stable Sort):
+    Sorted by Class (Using Stable Sort):
 
-- Arthas – Death Knight  
-- Morvash – Death Knight  
-- Sylvanas – Hunter  
-- Falrien – Hunter  
-- Jaina – Mage  
-- Elowen – Mage  
-- Anduin – Priest  
-- Velen – Priest  
-- Thrall – Shaman  
-- Grumak – Shaman  
+    - Arthas – Death Knight  
+    - Morvash – Death Knight  
+    - Sylvanas – Hunter  
+    - Falrien – Hunter  
+    - Jaina – Mage  
+    - Elowen – Mage  
+    - Anduin – Priest  
+    - Velen – Priest  
+    - Thrall – Shaman  
+    - Grumak – Shaman  
 
 ### 7. Gold Thief
 
@@ -187,13 +187,13 @@ For both these questions, are you are free to use what you did as the last secti
 
 1. Select one technical interview question (this module or previous) from the [technical interview list](https://github.com/CS5008-khoury/Resources/blob/main/TechInterviewQuestions.md) below and answer it in a few sentences. You can use any resource you like to answer the question.
 
-What is the difference between a compiled and an interpreted language? Which one is better? Give an example of each.
+    What is the difference between a compiled and an interpreted language? Which one is better? Give an example of each.
 
-A compiled language, like C, takes your whole program and translates it into machine code before it runs. This makes it fast and efficient because the computer can read it directly. An interpreted language, like Python, doesn’t do that all at once. It reads and runs your code one line at a time, which can be slower but easier to test and change. Compiled languages are great when speed matters, like in games or operating systems. Interpreted languages are better for learning, quick fixes, or small tasks.[1]
+    A compiled language, like C, takes your whole program and translates it into machine code before it runs. This makes it fast and efficient because the computer can read it directly. An interpreted language, like Python, doesn’t do that all at once. It reads and runs your code one line at a time, which can be slower but easier to test and change. Compiled languages are great when speed matters, like in games or operating systems. Interpreted languages are better for learning, quick fixes, or small tasks.[1]
 
 2. Select one coding question (this module or previous) from the [coding practice repository](https://github.com/CS5008-khoury/Resources/blob/main/LeetCodePractice.md) and include a c file with that code with your submission. Make sure to add comments on what you learned, and if you compared your solution with others. 
  
-[remove_duplicates.c] (https://github.com/CS5008Fall2025/homework-sorts-zembug/blob/main/remove_duplicates.c)
+    [remove_duplicates.c] (https://github.com/CS5008Fall2025/homework-sorts-zembug/blob/main/remove_duplicates.c)
 
 
 ## Deeper Thinking
