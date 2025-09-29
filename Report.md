@@ -54,7 +54,6 @@ Build another table that presents the best, worst, and average case for Bubble, 
 
 [2]
 
-
 #### 3.2 Worst Case
 Provide example of arrays that generate _worst_ case for Bubble, Selection, Insertion, Merge Sorts
 
@@ -70,8 +69,16 @@ Worst case for Bubble, Selection, and Insertion are completely reversed arrays.
 [2]
 
 #### 3.3 Best Case
-Provide example of arrays that generate _best_ case for Bubble, Selection, Insertion, Merge Sorts 
+Provide example of arrays that generate _best_ case for Bubble, Selection, Insertion, Merge Sorts
 
+| Sorts     | Best-Case Array|
+|:--|:--|
+| Bubble Sort     | [1, 2, 3, 4, 5, 6, 7]|
+| Selection Sort  | [1, 2, 3, 4, 5, 6, 7]|
+| Insertion Sort  | [1, 2, 3, 4, 5, 6, 7]|
+| Merge Sort      | [any array]|
+
+[2]
 
 #### 3.4 Memory Considerations
 Order the various sorts based on which take up the most memory when sorting to the least memory. You may have to research this, and include the mathematical notation. 
