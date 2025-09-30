@@ -239,11 +239,15 @@ In Python 3.6 and later, the built-in sort() method and the sorted() function us
 #### Visualize
 Find a graphic / visualization (can be a youtube video) that demonstrates the sort in action.
 
-![Step by step visualization of sorting algorithms with Explanation of Sorting Algorithms | Python
+[Step by step visualization of sorting algorithms with Explanation of Sorting Algorithms | Python
 ]https://www.youtube.com/watch?v=lfAymcJm3DY&t=2s
 
 #### Big O
 Give the worst and best case time-complexity, and examples that would generate them. 
+
+The best case time complexity is constant time, O(1). This means the algorithm completes in the same amount of time regardless of the size of the input. For example, if you want to get the first book in a list of books, like bookList[0], it takes the same amount of time whether the list has 37 books or 666 books. The operation is fast and doesn’t depend on the size of the data.
+
+The worst case time complexity can be factorial time, O(n!), which occurs when a computer has to try every possible arrangement to find the correct one. Imagine a wizard with 11 magical runes that must be placed in the exact right order to cast a spell. Not knowing the correct order, the wizard has to try every combination. With 11 runes, there are nearly 40 million different arrangements. Factorial time problems are extremely slow because the number of possibilities grows incredibly fast as more items are added.
 
 <hr>
 
