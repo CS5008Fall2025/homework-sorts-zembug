@@ -177,9 +177,44 @@ You are planning a heist to steal a rare coin that weighs 1.0001 ounces. The pro
 #### 7.1 Algorithm
 Describe an algorithm that will help you find the coin. We encourage you to use pseudo-code, but not required.
 
+To find the rare coin, divide the coins into two groups and place them on the balance. The heavier side must contain the rare coin, so you only need to keep searching that group. Repeat this process until only one coin remains. Each weighing reduces the number of possible coins by about half, so the time complexity is O(log n). For 250 coins, this takes about eight weighings on average. If the number of coins is odd, compare two nearly equal groups and leave one coin aside. If the scale balances, the leftover coin is the heavy one; otherwise, the heavier side contains it. This way, even uneven splits still reduce the problem size to about half. Overall, the method guarantees finding the heavy coin in logarithmic time, with the leftover coin trick preventing any ambiguity.
+
+```c
+// Function to steal the rare heavier coin from a pile
+int stealRareCoin(int coins[], int coinPile) {
+    while (coinPile > 1) {
+        int leftPile = coinPile / 2; // size of first pile
+        int rightPile = coinPile / 2; // size of second pile
+        int extraCoin = coinPile % 2; // extra coin if pile size is odd
+
+        // compare the two piles on the balance scale
+        // result = LEFT if left pile heavier, RIGHT if right pile heavier, BALANCED if equal
+        int result = weighCoins(coins, leftPile, rightPile);
+
+        if (result == LEFT) {
+            // rare coin is in the left pile
+            coins = first leftPile coins;
+            coinPile = leftPile;
+        } else if (result == RIGHT) {
+            // rare coin is in the right pile
+            coins = next rightPile coins after leftPile;
+            coinPile = rightPile;
+        } else {
+            // piles are balanced, rare coin is the extra one
+            coins = extra coin;
+            coinPile = 1;  // found the rare coin
+        }
+    }
+    // return the single remaining coin
+    return coins[0];
+}
+
+```
+
 #### 7.2 Time Complexity
 What is the average time complexity of your algorithm? 
 
+O(log n)
 
 ## Technical Interview Practice Questions
 
