@@ -232,10 +232,15 @@ A compiled language, like C, takes your whole program and translates it into mac
 
 
 ## Deeper Thinking
-Sorting algorithms are still being studied today. They often include a statistical analysis of data before sorting. This next question will require some research, as it isn't included in class content. When you call `sort()` or `sorted()` in Python 3.6+, what sort is it using? 
+Sorting algorithms are still being studied today. They often include a statistical analysis of data before sorting. This next question will require some research, as it isn't included in class content. When you call `sort()` or `sorted()` in Python 3.6+, what sort is it using?
+
+In Python 3.6 and later, the built-in sort() method and the sorted() function use an algorithm called Timsort. Timsort is a mix of two sorting methods, merge sort and insertion sort, and it was made to handle real-world data well. It works by first looking for small parts of the list that are already in order, called “runs,” and then combining these parts step by step until the whole list is sorted. This makes Timsort very efficient, especially when the list is already partly sorted, so it can sort data quickly and reliably.[4][5]
 
 #### Visualize
-Find a graphic / visualization (can be a youtube video) that demonstrates the sort in action. 
+Find a graphic / visualization (can be a youtube video) that demonstrates the sort in action.
+
+![Step by step visualization of sorting algorithms with Explanation of Sorting Algorithms | Python
+]https://www.youtube.com/watch?v=lfAymcJm3DY&t=2s
 
 #### Big O
 Give the worst and best case time-complexity, and examples that would generate them. 
@@ -250,6 +255,10 @@ Add your references here. A good reference includes an inline citation, such as 
 2. GeeksforGeeks. Sorting Algorithms. (August 24, 2025). Retrieved September 28, 2025 from https://www.geeksforgeeks.org/dsa/sorting-algorithms/
 
 3. GeeksforGeeks. Stable and Unstable Sorting Algorithms. (July 23, 2025). Retrieved September 28, 2025 from https://www.geeksforgeeks.org/dsa/stable-and-unstable-sorting-algorithms/
+
+4. Python Documentation. Sorting Techniques. (September 29, 2025). Retrieved September 29, 2025 from https://docs.python.org/3/howto/sorting.html
+
+5. Wikipedia. Timsort. (August 1, 2025). Retrieved September 29, 2025 from https://en.wikipedia.org/wiki/Timsort
 
 
 
